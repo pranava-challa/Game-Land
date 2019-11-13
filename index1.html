@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Invaders</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  </style>
+</head>
+
+<body>
+  <div class="anything">
+    <h3 style="text-align: center;">Space Invaders</h3>
+    <div class="dropdown">
+      <button class="dropbtn" style="text-align: center">Dropdown menu</button>
+      <div class="dropdown-content" style="text-align: center">
+        <a href="index.html">Home</a>
+        <a href="index1.html">Space Invaders</a>
+        <a href="snake.html">SnakeGame</a>
+        <a href="information.html">Information</a>
+        <a href="video.html">Video</a>
+        <a href="theend.html">The End</a>
+
+      </div>
+    </div>
+
+    </div>
+    <div class="wrap">
+    <header>Space Game</header>
+    <div class="game-wrapper">
+      <div class="game"></div>
+      <div class="congratulations">
+        <h1>Congratulations!</h1>
+        <h2>You won the game</h2>
+        <button class="btn" onclick="window.location.reload()">Restart</button>
+      </div>
+      <div class="game-over">
+        <h1>GAME OVER</h1>
+        <h2>You lost the game</h2>
+        <button class="btn" onclick="window.location.reload()">Restart</button>
+      </div>
+    </div>
+    <footer>Left/right keys to move, spacebar to shoot</footer>
+    </div>
+    <script src="js/game.js"></script>
+    </body>
+
+    </html>
